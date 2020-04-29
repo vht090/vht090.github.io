@@ -20,7 +20,7 @@ var servers = {
     //     'urls': 'stun:stun.l.google.com:19302'
     // }, 
     {
-        'urls': 'turn:ip-pc1-viettel.fi.i:3478',
+        'urls': 'turn:ip-pc1-viettel.fi.ai:3478',
         'credential': '123',
         'username': 'hung'
     }]
