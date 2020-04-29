@@ -14,11 +14,11 @@ var friendsVideo = document.getElementById("friendsVideo");
 var yourId = Math.floor(Math.random() * 1000000000);
 var servers = {
     'iceServers': [
-    // {
-    //     'urls': 'stun:stun.services.mozilla.com'
-    // }, {
-    //     'urls': 'stun:stun.l.google.com:19302'
-    // }, 
+    {
+        'urls': 'stun:stun.services.mozilla.com'
+    }, {
+        'urls': 'stun:stun.l.google.com:19302'
+    }, 
     {
         'urls': 'turn:115.79.141.160:3478',
         'credentials': '123',
