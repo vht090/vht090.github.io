@@ -22,7 +22,7 @@ var servers = {
     {
         'urls': 'turn:115.79.141.160:3478',
         'credentials': '123',
-        // 'credential': '123',
+        'credential': '123',
         'username': 'hung'
     }]
 };
