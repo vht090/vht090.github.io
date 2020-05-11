@@ -58,7 +58,7 @@ function sendMessage(senderId, data) {
 function readMessage(data) {
   var isErr = false;
   var sdp = data.sdp;
-
+  console.log('sdp', sdp);
   if (typeof sdp === 'string') {
     try {
       sdp = JSON.parse(sdp);
