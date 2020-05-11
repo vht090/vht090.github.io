@@ -121,7 +121,7 @@ function checkCall() {
         }
         var data = JSON.parse(data.data);
         if (data.sender != yourId) {
-          console.log('---data--', {...data});
+          console.log('---data--', data.sender, {...data});
           readMessage({...data});
         }  
       }
