@@ -58,9 +58,10 @@ function sendMessage(senderId, data) {
 function readMessage(data) {
   var isErr = false;
   var sdp = data.sdp;
-  console.log('sdp', sdp);
+  console.log('sdp', typeof sdp, sdp);
   if (typeof sdp === 'string') {
     try {
+      console.log('par---------')
       sdp = JSON.parse(sdp);
     } catch (e) {
       console.log('-----', e)
@@ -119,9 +120,9 @@ function checkCall() {
           // return;
         }
         var data = JSON.parse(data.data);
-        console.log(data);
         if (data.sender != yourId) {
-          readMessage(data);
+          console.log('---data--', {...data});
+          readMessage({...data});
         }  
       }
     });
